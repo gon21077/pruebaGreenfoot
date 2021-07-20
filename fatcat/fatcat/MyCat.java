@@ -13,13 +13,11 @@ public class MyCat extends Cat
      */
     public void act()
     {
-        if ( isAlone() == true)
+        sleep(2); //durmamos un poquito
+        if (isBored())
         {
-            sleep(2);
-        }
-        else if( isAlone() != true)
-        {
-            shoutHooray();
-        }
-    }    
+          shoutHooray(); 
+
+        }  
+    }
 }
